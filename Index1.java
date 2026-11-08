@@ -10,7 +10,7 @@ public class Index1 {
                     System.out.print("  ");
                 }
                 //Stars
-               for(int k = 1; k <= n-i+1; k++){
+               for(int k = n; k >= i; k--){
                  System.out.print("*" +" ");
             }
             System.out.println();
