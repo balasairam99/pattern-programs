@@ -1,16 +1,19 @@
 public class Index1 {
     public static void main(String[] args) {
 
-        int n = 5;
+        int n = 4;
        
-        for(int i = n; i >= 1; i--){
+        for(int i = 1; i <= 2*n-1; i++){
+
+            int spaces = (i>4)? (i-n) :(n-i);
+            int stars = (i<=4)? (2*i-1): (2*(2*n-i)-1);
             //Spaces
-            for(int j = n; j > i; j--){
+            for(int j = 1; j <= spaces; j++){
                 System.out.print("  ");
             }
             //Stars
-            for(int k = (2*i-1); k >= 1; k--){
-                System.out.print("*" + " ");
+            for(int k = 1; k <= stars; k++){
+                System.out.print("*");
             }
             System.out.println();
         }
