@@ -3,19 +3,30 @@ public class Index1 {
 
         int n = 4;
 
-        for(int i = 1; i <= 2*n-1; i++){
-            int spaces = (i>n)? i-n: n-i;
-            int stars = (i<=n)? i: 2*n-i;
-            //Spaces
-            for(int j = 1; j <= spaces; j++){
+        //Upper part
+        for(int i = 1; i <= n; i++){
+            //spaces
+            for(int j = 1; j <= n-i; j++){
                 System.out.print("  ");
             }
             //Stars
-            for(int k = 1; k <= stars; k++){
-                System.out.print("*" + " ");
+            for(int k = 1; k <= i; k++){
+                System.out.print("*"+ " ");
             }
             System.out.println();
         }
 
+        //Lower part
+        for(int i = 1; i <= n-1; i++){
+            //Spaces
+            for(int j = 1; j <= i; j++){
+                System.out.print("  ");
+            }
+            //Stars
+            for(int k = 1; k <= n-i; k++){
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
     }
 }
