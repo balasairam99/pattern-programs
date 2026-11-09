@@ -4,15 +4,13 @@ public class Index1 {
         //Stars
       
         for(int i = 1; i <= n; i++){
-            //Spaces
-            for(int j = 1; j < i; j++){
-                System.out.print("  ");
-                
+            char ch = 'A';
+            for(int j = 1; j <= i; j++){
+                System.out.print(ch);
+                System.out.print(" ");
+                ch++;
             }
-            //Stars
-            for(int j = 1; j <= 2*n - 2*i-1; j++){
-                System.out.print("*"+" ");
-            }System.out.println();
+            System.out.println();
         }
         
         
