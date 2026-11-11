@@ -1,18 +1,16 @@
 public class Index1 {
     public static void main(String[] args) {
-        int n = 5;
-        
-        for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= n; j++){
-                if((i==j) || ((j==n) && (i!=n)) || 
-            ((i==1) && (j>1 && j<n))){
-                    System.out.print("* ");
-                }else{
-                    System.out.print("  ");
-                }
+     
+         String str = "Python";
+
+         for(int i = 0; i < str.length(); i++){
+            for(int j = 0; j <= i; j++){
+                System.out.print(str.charAt(j));
             }
             System.out.println();
-        }
+         }
+
+        
          
         
     }
