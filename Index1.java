@@ -1,12 +1,11 @@
 public class Index1 {
     public static void main(String[] args) {
-      int n = 5;
+      int n = 6;
 
         for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= 5; j++){
+            for(int j = 1; j <= 6; j++){
                 
-                if(((j==3) && (i>2)) || ((i==j) && (i>=1 && i<=2))
-                || ((i+j==6) && (i>=1 && i<=2))) {
+                if((i==1 || i==n) || ((i+j==7) && (i!=1 && i!=n))) {
                         System.out.print("* ");
                 }else{
                         System.out.print("  ");
