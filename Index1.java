@@ -1,5 +1,6 @@
 public class Index1 {
     public static void main(String[] args) {
+        //? UPPER PART
         int n = 4;
         for(int i = 1; i <= n; i++){
 
@@ -17,7 +18,25 @@ public class Index1 {
             }
             System.out.println();
         }
-        int num = 8;
+        //?MIDDLE PART
+         int num = 8;
+
+        String name = "AMUL";
+        int value = num - name.length();
+        
+        for(int i = 1; i <= value/2; i++){
+            System.out.print("* ");
+        }
+
+        for(int i = 0; i < name.length(); i++){
+            System.out.print(name.charAt(i) +" ");
+        }
+        for(int i = 1; i <= value/2; i++){
+            System.out.print("* ");
+        }
+       System.out.println();
+
+       //?LOWER PART
         for(int i = 1; i <= num; i++){
             //Spaces
             for(int j = 1; j < i; j++){
